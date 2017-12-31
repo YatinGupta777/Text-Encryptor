@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.yatin.secretmessage.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button6"
+        >
+
+        <TextView
+            android:id="@+id/encryptTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button6"
+            android:focusable="true"
+            android:hint="Ouput will be shown here..."
+            android:longClickable="true"
+            android:maxLines="7"
+            android:overScrollMode="never"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="true"
+            android:textSize="17dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/encryptEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="bottom"
+            android:hint="Enter your text here..."
+            android:inputType="textMultiLine"
+            android:maxLines="7"
+            android:scrollbars="vertical" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button6"
+        android:layout_toEndOf="@+id/button6"
+        android:onClick="encrypt"
+        android:tag="2"
+        android:text="2"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button7"
+        android:layout_toEndOf="@+id/button2"
+        android:onClick="encrypt"
+        android:tag="3"
+        android:text="3"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:onClick="encrypt"
+        android:tag="4"
+        android:text="4"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button7"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/button"
+        android:onClick="encrypt"
+        android:tag="5"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/button6"
+        android:onClick="encrypt"
+        android:tag="6"
+        android:text="6"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button7"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_toEndOf="@+id/button7"
+        android:onClick="encrypt"
+        android:tag="7"
+        android:text="7"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button8"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_toEndOf="@+id/button8"
+        android:onClick="encrypt"
+        android:tag="8"
+        android:text="8"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button6"
+        android:layout_marginLeft="5dp"
+        android:layout_toStartOf="@+id/button2"
+        android:background="@drawable/button"
+        android:onClick="encrypt"
+        android:tag="1"
+        android:text="1" />
+
+</RelativeLayout>
